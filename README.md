@@ -1,5 +1,6 @@
 # Práctica guiada: Contador de frecuencia de palabras usando flujos de E/S en Java
 
+**Nombre** Angel Israel Gonzalez Torres  
 **Curso:** Desarrollo de Sistemas III  
 **Tema:** Flujos de entrada/salida en Java  
 **Duración sugerida:** 90–120 minutos  
