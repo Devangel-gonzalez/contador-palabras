@@ -7,6 +7,8 @@
 **Modalidad:** Laboratorio guiado  
 **Organización:** Individual 
 
+``javac src/ContadorPalabras.java``  
+``java -cp src ContadorPalabras datos/texto.txt``  
 ## 1. Problema
 
 Se dispone de un archivo de texto que contiene un documento de longitud variable. Se requiere desarrollar una aplicación en Java que permita al usuario proporcionar el nombre del archivo y determine **cuántas veces aparece cada palabra**.
@@ -112,7 +114,8 @@ Los flujos de salida permiten escribir datos.
                 └────────────────┘
 ```
 
-**Pregunta:** ¿Qué tipo de flujo resulta más apropiado para este problema: bytes o caracteres? Justifique.
+**Pregunta:** ¿Qué tipo de flujo resulta más apropiado para este problema: ``bytes`` o ``caracteres``? Justifique.  
+``Caracteres`` porque los flujos de caracteres estan diseñados para procesar texto Manejan automáticamente la codificación de caracteres (como UTF-8), traduciendo los bytes del disco en símbolos legibles (letras, números, acentos y eñes) según el estándar del sistema.
 
 # Parte III. Recibir y representar el archivo
 
@@ -143,7 +146,8 @@ java ContadorPalabras
 java ContadorPalabras datos/texto.txt
 ```
 
-**Pregunta:** ¿Por qué resulta preferible recibir el nombre del archivo como argumento en lugar de escribirlo directamente en el código?
+**Pregunta:** ¿Por qué resulta preferible recibir el nombre del archivo como argumento en lugar de escribirlo directamente en el código?  
+Porque en cualquier momento podemos decidir si usar otro archivo y usando los argumentos no tenemos que volver a tocar el codigo.
 
 ## 6. Trabajar con `Path`
 
